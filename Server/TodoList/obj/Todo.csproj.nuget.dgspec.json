@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\TodoList\\TodoList\\Todo.csproj": {}
+    "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\Server\\TodoList\\Todo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\TodoList\\TodoList\\Todo.csproj": {
+    "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\Server\\TodoList\\Todo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\TodoList\\TodoList\\Todo.csproj",
+        "projectUniqueName": "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\Server\\TodoList\\Todo.csproj",
         "projectName": "Todo",
-        "projectPath": "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\TodoList\\TodoList\\Todo.csproj",
+        "projectPath": "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\Server\\TodoList\\Todo.csproj",
         "packagesPath": "C:\\Users\\as\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\TodoList\\TodoList\\obj\\",
+        "outputPath": "C:\\Users\\as\\Documents\\GitHub\\Todo-List\\Server\\TodoList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\as\\AppData\\Roaming\\NuGet\\NuGet.Config",
