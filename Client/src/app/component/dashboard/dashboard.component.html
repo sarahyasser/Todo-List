@@ -1,0 +1,71 @@
+
+    <div class="container-fluid background-image-container"style="max-height: 850px; overflow-y: auto;">
+        <div class="container ">
+
+            <div class="row">
+                <div class="col "></div>
+                <div class="top col-md-5 shadow  p-2">
+
+                    <div class=" card bg-pink mt-2 p-2">
+                        <h4 class="text-center text-white ps-3 pt-2 pb-2">To Do List</h4>
+                    </div>
+                    <div class=" p-3 ">
+                        <div class="input-group p-2  ">
+                            <input type="text" class="form-control" [(ngModel)]="newTaskDescription" placeholder="Add a task">
+                            <input type="date" class="form-control"  [(ngModel)]="newTaskDueDate"> 
+                            <button class="btn btn-outline-primary" type="button" (click)="addTask()" (click)="reloadCurrentPage()">+</button>
+                        </div>
+                    </div>
+           
+                    <!-- <h4 class="text-primary mt-3">Tasks</h4> -->
+                    <div *ngFor="let task of tasks ">
+                    
+                                <div class="input-group row p-1 ms-0 ">
+                                    <div class="card  border-1 p-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="form-check ps-5 ">
+                                                <input class="form-check-input custom-checkbox" type="checkbox" [checked]="task.isCompleted" (click)="onCheckboxClick(task)" (click)="reloadCurrentPage()">
+                                            </div>
+                                            <div class="ps-1"> 
+                                                {{ task.description }}
+                                            </div> 
+                                            <button class="delete" (click)="deleteTask(task)"(click)="reloadCurrentPage()" >x</button>
+                                    </div>
+                                     <div class="small-font ps-5"> 
+                                                {{ task.dueDate | date: 'E, MMM d' }}
+                                            </div>
+                                
+                                    <!-- <button class="btn btn-outline-danger col">Delete</button> -->
+                           
+                        </div>
+                    </div>
+                    </div>
+                    <!-- <h4 class="text-primary mt-3">Completed Tasks</h4> -->
+                    <div *ngFor="let compTask of completedTasks" >
+                    
+                                <div class="input-group row p-1 ms-0 ">
+                                    <div style="background-color: #ffffff;"class="card border-1 p-3">
+                                        <div class="d-flex align-items-center" >
+                                            <div  style="color:rgb(30, 3, 23)" class="form-check ps-3 ">
+                                                <span class="circle-checkmark">✓</span>
+                                            </div>
+                                            <div style="color:rgb(0, 0, 0)" class="flex-grow-1 ps-2 "> 
+                                                 <s>{{ compTask.description }}</s>
+                                            </div>
+                                            
+                                            <!-- <div class="custom-checkbox checked"></div> -->
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                </div>
+           
+
+            <div class="col"></div>
+        </div>
+    </div>
+</div>
+
+
+    
