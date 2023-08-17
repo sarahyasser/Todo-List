@@ -27,9 +27,6 @@ namespace TodoList.Controllers
             }
 
             int newTaskId = tasks.Count + 1;
-
-            //DateTime newDate = DateTime.Parse(newTask.DueDate);
-           // newTask.DueDate = newDate;
             newTask.TaskId = newTaskId;
             newTask.IsCompleted = false;
             tasks.Add(newTask);
@@ -73,9 +70,20 @@ namespace TodoList.Controllers
         }
         [HttpGet("api/completedTasks")]
         public IActionResult GetCompletedTasks()
-        {
-           // List<Task> completedTasks = tasks.Where(t => t.IsCompleted).ToList();
+        { 
             return Ok(completedTasks);
+        }
+
+        [HttpDelete("api/deleteTask/{id}")]
+        public IActionResult deleteTask(int id)
+        {
+            Task task = tasks.Find(t => t.TaskId == id);
+            if (task == null)
+            {
+                return NotFound("Task not found.");
+            }
+            tasks.Remove(task);
+            return Ok(task);
         }
     }
 }
