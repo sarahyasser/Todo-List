@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "0849c5c7-d00e-4b50-9caa-8613cd7e12e2",
+		"name": "Todo List",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25030987",
+		"_collection_link": "https://planetary-star-779855.postman.co/workspace/private-workspace-~10144eb2-c6a9-4904-904c-44fa90555dc1/collection/25030987-0849c5c7-d00e-4b50-9caa-8613cd7e12e2?action=share&source=collection_link&creator=25030987"
+	},
+	"item": [
+		{
+			"name": "get tasks",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "post task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"Description\" : \"sarsour\",\r\n   \"DueDate\" : \"2023-08-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30537/api/addTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30537",
+					"path": [
+						"api",
+						"addTask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "completeTask",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30537/api/completeTask/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30537",
+					"path": [
+						"api",
+						"completeTask",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCompletedTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30537/api/completedTasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30537",
+					"path": [
+						"api",
+						"completedTasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30537/api/deleteTask/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30537",
+					"path": [
+						"api",
+						"deleteTask",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

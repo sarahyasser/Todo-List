@@ -85,7 +85,6 @@ C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\bin\Debug\net5.0\Todo.dep
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\bin\Debug\net5.0\Todo.runtimeconfig.json
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\bin\Debug\net5.0\Todo.runtimeconfig.dev.json
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\bin\Debug\net5.0\Todo.dll
-C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\bin\Debug\net5.0\ref\Todo.dll
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\bin\Debug\net5.0\Todo.pdb
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\bin\Debug\net5.0\Todo.Views.dll
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\bin\Debug\net5.0\Todo.Views.pdb
@@ -98,7 +97,6 @@ C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\Todo.Mvc
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\Todo.RazorAssemblyInfo.cache
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\Todo.RazorAssemblyInfo.cs
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\staticwebassets\Todo.StaticWebAssets.Manifest.cache
-C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\staticwebassets\Todo.StaticWebAssets.xml
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\scopedcss\bundle\Todo.styles.css
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\Todo.TagHelpers.input.cache
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\Todo.TagHelpers.output.cache
@@ -118,3 +116,9 @@ C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\ref\Todo
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\Todo.pdb
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\Todo.genruntimeconfig.cache
 C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\Todo.csproj.CopyComplete
+C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\staticwebassets\Todo.StaticWebAssets.Pack.cache
+C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\staticwebassets\msbuild.Todo.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\staticwebassets\msbuild.build.Todo.props
+C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Todo.props
+C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Todo.props
+C:\Users\as\Documents\GitHub\Todo-List\Server\TodoList\obj\Debug\net5.0\refint\Todo.dll
