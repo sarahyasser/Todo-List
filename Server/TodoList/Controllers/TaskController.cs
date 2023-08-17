@@ -51,7 +51,14 @@ namespace TodoList.Controllers
         [HttpGet("api/tasks")]
         public IActionResult GetAllTasks()
         {
-            return Ok(tasks);
+            List<Task> sortedTasks = SortTasksByDueDate(tasks);
+            return Ok(sortedTasks);
+        }
+
+        private List<Task> SortTasksByDueDate(List<Task> taskList)
+        {
+            List<Task> sortedTasks = taskList.OrderBy(t => t.DueDate).ToList();
+            return sortedTasks;
         }
 
         [HttpPut("api/completeTask/{id}")]
