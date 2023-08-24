@@ -19,6 +19,10 @@ export class DashboardComponent implements OnInit{
     this.fetchTasks(); // Fetch tasks when the component initializes
     this.fetchCompletedTasks();
   }
+  updateContent(){
+    this.fetchTasks();
+    this.fetchCompletedTasks()
+  }
   
 
   fetchTasks(): void {
@@ -52,7 +56,6 @@ export class DashboardComponent implements OnInit{
   onCheckboxClick(task: any): void {
     if (!task.isCompleted) {
       this.completeTask(task.taskId);
-      //this.fetchCompletedTasks();
     }
   }
 
@@ -60,6 +63,7 @@ export class DashboardComponent implements OnInit{
     this.TaskService.completeTask(taskId).subscribe(
       (completedTask) => {
         console.log('Task completed:', completedTask);
+        this.updateContent();
       },
       (error) => {
         console.log(error);
@@ -84,6 +88,7 @@ export class DashboardComponent implements OnInit{
     this.TaskService.addTask(newTask).subscribe(response => {
       console.log('Task added successfully:', response);
       alert('Task added successfully');
+      this.updateContent();
     }, error => {
       console.error('Error adding task:', error);
     });
@@ -95,6 +100,7 @@ export class DashboardComponent implements OnInit{
       (response) => {
         console.log('Task deleted successfully:', response);
         alert('Task deleted successfully');
+        this.updateContent();
       },
       (error) => {
         console.error('Error deleting task:', error);

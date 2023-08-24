@@ -7,34 +7,30 @@ namespace TodoList.Controllers
 {
     public class TaskController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+   
         private static List<Task> tasks = new List<Task>
         {
-            new Task { TaskId = 1, Description = "Task 1", DueDate = new DateTime(2023, 8, 31), IsCompleted = false },
-            new Task { TaskId = 2, Description = "Task 2", DueDate = new DateTime(2023, 9, 15), IsCompleted = false }
+            new Task { TaskId = 1, Description = "Task 1", DueDate = new DateTime(2023, 8, 31) },
+            new Task { TaskId = 2, Description = "Task 2", DueDate = new DateTime(2023, 9, 15) }
         };
         private static Stack<Task> completedTasks = new Stack<Task>() ;
 
         [HttpPost("api/addTask")]
         public IActionResult CreateTask([FromBody] Task newTask)
         {
-            if (newTask == null)
-            {
-                return BadRequest("Invalid task data.");
-            }
-
-            int newTaskId = tasks.Count + 1;
+            int newTaskId = createID();
             newTask.TaskId = newTaskId;
-            newTask.IsCompleted = false;
             tasks.Add(newTask);
 
             // Return the newly created task along with the generated task id
             return CreatedAtAction(nameof(GetTaskById), new { id = newTaskId }, newTask);
 
         }
+        private int createID()
+        {
+            return tasks.Count + 1;
+        }
+
 
         [HttpGet("api/tasks/{id}")]
         public IActionResult GetTaskById(int id)
