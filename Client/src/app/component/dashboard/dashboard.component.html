@@ -13,7 +13,7 @@
                         <div class="input-group p-2  ">
                             <input type="text" class="form-control" [(ngModel)]="newTaskDescription" placeholder="Add a task">
                             <input type="date" class="form-control"  [(ngModel)]="newTaskDueDate"> 
-                            <button class="btn btn-outline-primary" type="button" (click)="addTask()" (click)="reloadCurrentPage()">+</button>
+                            <button class="btn btn-outline-primary" type="button" (click)="addTask()">+</button>
                         </div>
                     </div>
            
@@ -24,19 +24,19 @@
                                     <div class="card  border-1 p-2">
                                         <div class="d-flex align-items-center">
                                             <div class="form-check ps-5 ">
-                                                <input class="form-check-input custom-checkbox" type="checkbox" [checked]="task.isCompleted" (click)="onCheckboxClick(task)" (click)="reloadCurrentPage()">
+                                                <input class="form-check-input custom-checkbox" type="checkbox" [checked]="task.isCompleted" (click)="onCheckboxClick(task)">
                                             </div>
                                             <div class="ps-1"> 
                                                 {{ task.description }}
                                             </div> 
-                                            <button class="delete" (click)="deleteTask(task)"(click)="reloadCurrentPage()" >x</button>
+                                            <button class="delete" (click)="deleteTask(task)" >x</button>
                                     </div>
-                                     <div class="small-font ps-5"> 
+                                    <div class="small-font ps-5"> 
                                                 {{ task.dueDate | date: 'E, MMM d' }}
                                             </div>
                                 
                                     <!-- <button class="btn btn-outline-danger col">Delete</button> -->
-                           
+    
                         </div>
                     </div>
                     </div>
